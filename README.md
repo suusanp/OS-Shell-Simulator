@@ -9,7 +9,6 @@ Welcome to my Simulated OS Shell! This project is a part of the Operating System
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Testcases](#testcases)
 
 
 ## Description
@@ -60,8 +59,6 @@ Clone the repository to your local machine.
 
 For interactive use, simply run ./mysh.
 
-## Testcases
-Testcases were provided by the course. They can be found in the testcases directory.
 
 
 
