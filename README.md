@@ -13,7 +13,7 @@ Welcome to my Simulated OS Shell! This project is a part of the Operating System
 
 ## Description
 
-This simulated OS shell is written entirely in C. It support concurrent processes and introduces different scheduling policies, including First-Come-First-Serve (FCFS), Shortest Job First (SJF), Round Robin (RR), and more. It simulates a basic operating system shell where users can interact with the system, manage variables, execute commands from scripts, and work with directories and files.
+This simulated OS shell is written entirely in C. It support concurrent processes and introduces different scheduling policies, including First-Come-First-Serve (FCFS), Shortest Job First (SJF), Round Robin (RR), and Aging (AGING). It simulates a basic operating system shell where users can interact with the system, manage variables, execute commands from scripts, and work with directories and files.
 
 
 
@@ -34,13 +34,14 @@ This simulated OS shell is written entirely in C. It support concurrent processe
 
 - **`echo` Command**: It includes an `echo` command for displaying strings. The string can be alphanumeric or a variable name preceded by `$`.
 
-- **Batch Mode Improvements**: In batch mode, the shell no longer enters an infinite loop if the last command in the input file is not "quit." It returns to interactive mode. The `$` symbol is displayed only in interactive mode.
+- **Batch Mode** It returns to interactive mode. The `$` symbol is displayed only in interactive mode.
 
 - **Directory Commands**: Additional commands include:
   - `my_ls`: Lists files and directories in the current directory.
   - `my_mkdir dirname`: Creates a new directory, supporting both alphanumeric and variable-based directory names.
   - `my_touch filename`: Creates an empty file with an alphanumeric name.
   - `my_cd dirname`: Changes the current directory.
+  - `exec SCRIPT1.TXT SCRIPT2.TXT SCRIPT3.TXT POLICY`: Executes script according to input policy. Policy includes: FCFS, SJF, RR, AGING
 
 - **Chaining Commands**: Chain multiple instructions together using semicolons, enabling sequential execution of commands.
 
